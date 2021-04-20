@@ -9,6 +9,7 @@
     tools:context=".Calculadora">
     <!-- parte par la calculadora!-->
     <TextView
+        android:id="@+id/textResultado"
         android:layout_width="match_parent"
         android:text="123"
         android:textSize="28sp"
@@ -80,24 +81,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
+            android:id="@+id/btnUno"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:text="1"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/btnDos"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:text="2"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/btnTres"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:text="3"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/btnMas"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:layout_width="0dp"
