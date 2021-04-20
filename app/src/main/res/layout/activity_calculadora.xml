@@ -22,24 +22,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
+            android:id="@+id/btnSiete"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:text="7"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/btnOcho"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:text="8"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/btnNueve"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:text="9"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/btnMultiplicar"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -52,24 +56,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
+            android:id="@+id/btnCuatro"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:text="4"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/btnCinco"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:text="5"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/btnSeis"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:text="6"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/btnMenos"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -107,6 +115,40 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:text="+"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- fila 0!-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnDividir"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="/"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnCero"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="0"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnPunto"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="."
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnIgual"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="="
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
