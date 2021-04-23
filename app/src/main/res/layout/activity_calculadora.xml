@@ -11,12 +11,33 @@
     <TextView
         android:id="@+id/textResultado"
         android:layout_width="match_parent"
-        android:text="123"
-        android:textSize="28sp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
         android:gravity="right|bottom"
         android:textColor="#000000"
-        android:layout_marginBottom="16dp"
-        android:layout_height="100dp"/>
+        android:textSize="28sp" />
+    <!-- fila 4!-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_margin="4dp"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:text="Clear"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnDividir"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="/"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
     <!-- fila 3!-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -122,13 +143,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <Button
-            android:id="@+id/btnDividir"
+            android:id="@+id/btnVacio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            android:layout_width="0dp"
-            android:text="/"
-            android:layout_height="wrap_content"/>
+            android:text=""
+            android:visibility="invisible" />
         <Button
             android:id="@+id/btnCero"
             android:layout_margin="4dp"

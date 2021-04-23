@@ -23,11 +23,15 @@ class Calculadora : AppCompatActivity() {
     lateinit var btnDividir:Button
     lateinit var btnPunto:Button
     lateinit var btnCero: Button
+    lateinit var  btnLimpiar: Button
+
+    //trabajo para la funcionalidad de la calculadora
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculadora)
-
+        var punto = true
         txtResultado = findViewById(R.id.textResultado)
 
         btnUno = findViewById(R.id.btnUno)
@@ -45,40 +49,67 @@ class Calculadora : AppCompatActivity() {
         btnDividir = findViewById(R.id.btnDividir)
         btnPunto = findViewById(R.id.btnPunto)
         btnCero = findViewById(R.id.btnCero)
+        btnLimpiar = findViewById(R.id.btnLimpiar)
 
         btnUno.setOnClickListener{
-            txtResultado.text = "1"
+            var data = 1
+            txtResultado.text = "${txtResultado.text}$data"
         }
         btnDos.setOnClickListener{
-            txtResultado.text = "2"
+            var data = 2
+            txtResultado.text = "${txtResultado.text}$data"
         }
         btnTres.setOnClickListener{
-            txtResultado.text = "3"
+            var data = 3
+            txtResultado.text = "${txtResultado.text}$data"
         }
         btnCuatro.setOnClickListener{
-            txtResultado.text = "4"
+            var data = 4
+            txtResultado.text = "${txtResultado.text}$data"
         }
         btnCinco.setOnClickListener{
-            txtResultado.text = "5"
+            var data = 5
+            txtResultado.text = "${txtResultado.text}$data"
         }
         btnSeis.setOnClickListener{
-            txtResultado.text = "6"
+            var data = 6
+            txtResultado.text = "${txtResultado.text}$data"
         }
         btnSiete.setOnClickListener{
-            txtResultado.text = "7"
+            var data = 7
+            txtResultado.text = "${txtResultado.text}$data"
         }
         btnOcho.setOnClickListener{
-            txtResultado.text = "8"
+            var data = 8
+            txtResultado.text = "${txtResultado.text}$data"
         }
         btnNueve.setOnClickListener{
-            txtResultado.text = "9"
+            var data = 9
+            txtResultado.text = "${txtResultado.text}$data"
         }
         btnPunto.setOnClickListener{
-            txtResultado.text = "."
+            var data = "."
+            if(punto){
+                if(txtResultado.text.isEmpty()){
+                    txtResultado.text = "0."
+                }else {
+                    txtResultado.text = "${txtResultado.text}$data"
+                }
+                punto=false
+            }
+
         }
         btnCero.setOnClickListener{
-            txtResultado.text = "0"
+            var data = 0
+            txtResultado.text = "${txtResultado.text}$data"
         }
+        btnLimpiar.setOnClickListener{
+            txtResultado.text = ""
+            punto=true
+        }
+        //realizar las operaciones
+
 
     }
+
 }
